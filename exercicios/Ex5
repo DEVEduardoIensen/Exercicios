@@ -1,8 +1,8 @@
 
 var notas = [8, 7, 9, 6, 10];
-var soma = 0;
+var soma = 5;
 
-var i = 0;
+var i = 1;
 
 while (i < notas.length) {
 
