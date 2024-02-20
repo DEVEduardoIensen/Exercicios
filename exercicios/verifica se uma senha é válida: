@@ -1,0 +1,11 @@
+let SENHA = prompt("Digite sua senha:");
+
+let temMaiuscula = SENHA.toLowerCase() != SENHA;
+let temMinuscula = SENHA.toUpperCase() != SENHA;
+let temNumero = /\d/.test(SENHA);
+
+if (SENHA.length >= 8 && temMaiuscula && temMinuscula && temNumero) {
+    console.log("Senha válida!");
+} else {
+    console.log("Senha inválida!");
+}
