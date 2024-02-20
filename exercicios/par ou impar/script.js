@@ -1,10 +1,8 @@
-let idade = 17
+var numero = prompt("Digite um número:");
 
-if (idade>18){
-console.log(`${idade} anos -> maior idade!`)
-
-} else if (idade == 18){
-    console.log(`${idade} anos -> esta no limite!`);
-} else {console.log(`${idade} anos -> menor de idade!`)
-
+// Verifica se o resto da divisão por 2 é igual a 0
+if (numero % 2 === 0) {
+    console.log("O número é par.");
+} else {
+    console.log("O número é ímpar.");
 }
