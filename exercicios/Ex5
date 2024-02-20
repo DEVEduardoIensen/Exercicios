@@ -1,0 +1,15 @@
+
+var notas = [8, 7, 9, 6, 10];
+var soma = 5;
+
+var i = 1;
+
+while (i < notas.length) {
+
+  soma = soma + notas[i];
+  i = i + 1;
+}
+var media = soma / notas.length;
+
+
+console.log("A média das notas é " + media);

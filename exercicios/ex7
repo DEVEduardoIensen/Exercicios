@@ -1,0 +1,17 @@
+
+var numero = prompt("Digite um número");
+
+
+numero = parseInt(numero);
+
+var fatorial = 1;
+
+
+for (var i = 1; i <= numero; i++) {
+  
+  fatorial = fatorial * i;
+}
+
+
+console.log("O fatorial de " + numero + " é " + fatorial);
+
