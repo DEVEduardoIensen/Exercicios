@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Jogo de Adivinhação</title>
+<style>
+body { font-family: Arial, sans-serif; text-align: center; }
+#resultado { color: green; }
+</style>
+</head>
+<body>
+<h1>Jogo de Adivinhação de Número</h1>
+<p>Adivinhe um número entre 1 e 100:</p>
+<input type="number" id="palpite" placeholder="Insira seu palpite aqui">
+<button onclick="verificarPalpite()">Verificar</button>
+<p id="resultado"></p>
+<script>
+var numeroSecreto = Math.floor(Math.random() * 100) + 1;
+function verificarPalpite() {
+var palpite = document.getElementById('palpite').value;
+var resultado = document.getElementById('resultado');
+if (palpite == numeroSecreto) {
+resultado.textContent = 'Parabéns! Você acertou!';
+    } else if (palpite < numeroSecreto) {
+resultado.textContent = 'Mais alto!';
+} else if (palpite > numeroSecreto) {
+resultado.textContent = 'Mais baixo!';
+    } else {
+resultado.textContent = 'Por favor, insira um número válido.';
+    }
+}
+</script>
+</body>
+</html>
